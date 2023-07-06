@@ -1,0 +1,30 @@
+此工程文件夹共三大部分：
+*java ： java后端文件夹
+*DB ：mysql数据库文件夹
+*pages ：vue前端文件夹
+
+
+Java文件夹共包含以下主要内容：
+/java/demo/pom.xml：maven项目管理配置文件
+/java/demo/src/main : 核心代码文件夹
+	*/java/com/example/demo/DemoApplication.java:程序入口类
+	*/java/com/example/demo/Festival.java:对应Mysql中Festival表的单条数据结构类
+	*/java/com/example/demo/FestivalRepository.java:用于和数据库互动类
+	*/java/com/example/demo/FestivalController.java:用于处理Festival表相关的请求，并处理加密数据类
+	*/resources/application.properties: springboot配置文件
+/java/demo/src/test：测试文件夹
+/java/demo/target:项目构建文件夹
+
+
+DB文件夹包含以下主要内容：
+/festival.sql：从数据库导出的数据表文件
+/InputDataToMysql.py：将excel表导入数据库脚本文件
+/Festival.xlsx：中华传统节日数据表
+
+
+Pages文件夹包含以下主要内容：
+/image:存放图片的文件夹
+/App.vue：程序入口
+/Home.vue：网站首页
+/cont.vue：单节日具体信息页
+/main.ts：配置文件
